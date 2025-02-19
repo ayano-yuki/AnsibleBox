@@ -1,0 +1,13 @@
+- name: aptのアップデート
+  hosts: conoha
+  become: yes  # sudo権限で実行
+  tasks:
+    - name: Update apt package list
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600  # 1時間キャッシュを有効にして、無駄な更新を防ぐ
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: dist
+        autoclean: yes  # 不要なパッケージのクリーンアップ
