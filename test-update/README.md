@@ -1,5 +1,5 @@
 # test-update
-Ansibleのplaybookを書く練習で作った「aptをアップデート」playbookです。
+aptのアップデート
 
 ## 実行コマンド
 ```sh

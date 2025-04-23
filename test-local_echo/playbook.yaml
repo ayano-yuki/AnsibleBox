@@ -1,0 +1,11 @@
+- name: 制御ノードに実行結果を表示させたい
+  hosts: conoha
+  become: yes  # sudo権限で実行
+  tasks:
+    - name: Echo a message
+      command: echo "Hello from control node!"
+      register: echo_result
+
+    - name: Show echo result
+      debug:
+        var: echo_result.stdout

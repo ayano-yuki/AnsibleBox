@@ -1,5 +1,5 @@
 # test-inventory
-Ansibleの環境構築と、VPSへの接続を確認するために実行します。
+Ansibleの環境構築と、VPSへの接続を確認するために実行
 
 **前提条件**
 - SSH用のKeyが既に配布し終わっている
